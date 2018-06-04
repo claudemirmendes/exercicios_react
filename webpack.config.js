@@ -1,9 +1,9 @@
 const webpack = require('webpack')
 
 module.exports = {
-	entry: './ex/index.js',
+	entry: './ex/index.jsx',
 	output: {
-		path: _dirname + './public',
+		path: __dirname + '/public',
 		filename: './bundle.js'
 	},
 	devServer: {
@@ -14,7 +14,7 @@ module.exports = {
 		loaders: [{
 			test: /.jsx?$/,
 			loader: 'babel-loader',
-			exclude: '/node_modules',
+			exclude: '/node_modules/',
 			query : {
 				presets: ['react','es2015']
 			}
