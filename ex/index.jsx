@@ -1,4 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import {firsComponent, SecondComponent} from './componente.jsx'
 
-ReactDOM.render(<h1>asda</h1>,document.getElementById('app'));
+ReactDOM.render(<div>
+	  <firsComponent/>,
+	  <SecondComponent/>
+	</div>,
+	document.getElementById('app'));
